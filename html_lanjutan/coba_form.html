@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Sederhana</title>
-    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16">
+    <link rel="icon" type="img/png" href="html_form/gambar/icon.png" sizes="16x16">
 </head>
 
 <body>
-    <form action="/action_page.php">
-        <label for="depan">Nama depan:</label><br>
-        <input type="text" id="depan" name="l_name" value="Budi"><br>
-        <label for="n_belakang">Nama Belakang:</label><br>
-        <input type="text" id="n_belakang" name="l_belakan" value="Prawira"><br><br>
+    <form action="/action_page.php" target="_self" method="get">
+        <label for="depan">Nama depan :</label><br>
+        <input type="text" id="depan" name="l_name" value="Dayinta"><br>
+        <label for="n_belakang">Nama Belakang :</label><br>
+        <input type="text" id="n_belakang" name="l_belakang" value="Faj'rin"><br><br>
         <input type="submit" value="Kirim">
         <input type="reset" value="Reset">
     </form>
         
     <p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama "/action_page.php".</p>
         
-    <p> <!-- Kesimpulan Uji coba Disini --> </p>
+    <p>
+        Ketika tombol "Reset" ditekan, semua nilai dalam formulir akan dikembalikan ke nilai default yang 
+        ditentukan dalam atribut "value". <br> Atribut target="_self" menunjukkan bahwa hasil formulir 
+        akan ditampilkan di jendela atau tab yang sama setelah pengiriman. <br> 
+        Menambahkan atribut "method" dengan nilai "get" akan mengirimkan data formulir melalui URL. 
+    </p>
         
 </body>
 </html>
